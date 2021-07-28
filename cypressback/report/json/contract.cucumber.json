@@ -10,59 +10,34 @@
       {
         "id": "contract-teste-with-json-schema;requesting-from-serverest-api-and-validating-contract",
         "keyword": "Scenario",
-        "line": 3,
+        "line": 4,
         "name": "Requesting from serverest api and validating contract",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@example",
+            "line": 3
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 4,
+            "line": 5,
             "name": "request all the users from /usuarios",
             "result": {
               "status": "passed",
-              "duration": 4439000000
+              "duration": 290000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 5,
+            "line": 6,
             "name": "must be responsed the schema \"get-user\" with status 200",
             "result": {
               "status": "passed",
-              "duration": 43000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "contract-teste-with-json-schema;postin-users-on-serverest-api-and-validating-contract",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Postin users on serverest API and validating Contract",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "post the user of type \"invalid\"",
-            "result": {
-              "status": "passed",
-              "duration": 118000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "must be responsed the schema \"post-user\" with status 400",
-            "result": {
-              "status": "passed",
-              "duration": 10000000
+              "duration": 55000000
             }
           }
         ]
@@ -78,21 +53,47 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "post the user of type \"valid\"",
+            "line": 10,
+            "name": "post the user of type \"invalid\"",
             "result": {
-              "status": "passed",
-              "duration": 102000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
+            "line": 11,
+            "name": "must be responsed the schema \"post-user\" with status 400",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "contract-teste-with-json-schema;postin-users-on-serverest-api-and-validating-contract",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Postin users on serverest API and validating Contract",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 10,
+            "name": "post the user of type \"valid\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
             "name": "must be responsed the schema \"post-user\" with status 201",
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           }
         ]
