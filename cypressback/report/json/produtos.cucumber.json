@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Listar Produtos",
+    "line": 1,
+    "id": "listar-produtos",
+    "tags": [],
+    "uri": "produtos.feature",
+    "elements": [
+      {
+        "id": "listar-produtos;listar-produtos-cadastrados",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Listar produtos cadastrados",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "forncer lista de produtos /produtos",
+            "result": {
+              "status": "passed",
+              "duration": 437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "deve ser respondido o schema \"get-produtos\" com status 200",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

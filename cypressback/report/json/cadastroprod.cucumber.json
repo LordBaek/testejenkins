@@ -1,0 +1,97 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Listar Produtos",
+    "line": 1,
+    "id": "listar-produtos",
+    "tags": [],
+    "uri": "cadastroprod.feature",
+    "elements": [
+      {
+        "id": "listar-produtos;postar-produto",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Postar produto",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "post the product of type \"valid\" from /produtos",
+            "result": {
+              "status": "undefined",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "must be responsed the schema \"post-produtos\" with status 201",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "listar-produtos;postar-produto",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Postar produto",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "post the product of type \"inval\" from /produtos",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "must be responsed the schema \"post-produtos\" with status 400",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "listar-produtos;postar-produto",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Postar produto",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "post the product of type \"empty\" from /produtos",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "must be responsed the schema \"post-produtos\" with status 401",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
